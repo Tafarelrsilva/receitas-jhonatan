@@ -1,0 +1,214 @@
+/* CORPO */
+body {
+	font-family: Nunito, sans-serif;
+	color: #FFFFFF;
+}
+h1, h2, h3 {
+	font-family: Asap Condense, sans-serif;
+	color: #000000;
+}
+.botao {
+		color: #FFFFFF;
+		text-decoration: none;
+		padding: 10px 30px;
+		background-color: #FF4500;
+		font-size: .9em;
+		border-radius: 3px;
+}
+/* Navegação */
+nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #FF4500;
+}
+nav > a {
+			text-decoration: none;
+			color: #FFFFFF;
+			font-weight: 800;
+			font-size: 32px;
+			font-family: Dancing Scrip, cursiva;
+}
+nav ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		list-style: none;
+		padding: 0;
+		width: 100%;
+}
+nav ul li {
+
+			text-align: center;
+			width: 100%;
+}
+nav ul li a {
+			display: inline-block;
+			padding: 10px 0;
+			width: 100%;
+			text-decoration: none;
+			color: #FFFFFF;
+}
+/*Cabeçalho*/
+header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-image: url("../img/camera.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		color: #FFFFFF;
+		text-align: center;
+		padding: 20px;
+}
+header h1{
+	color: #FFFFFF;
+}
+header p{
+	margin-bottom: 2em;
+}
+#sobre {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 10px 10px 20px 20px;
+		background-color: #FFFFFF;
+		color: #000000;
+}
+#sobre h2 {
+	color: #000000;
+}
+#sobre p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+#sobre .botao {
+	background-color: #FF4500;
+	color: #FFFFFF;
+}
+/*Serviços*/
+#serviços {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		background-color: #FF4500;
+		background-size: cover;
+		color: #FFFFFF;
+		width: 100%;
+}
+#serviços div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-top: 30px;
+}
+#serviços h2, h3 {
+	color: #FFFFFF
+}
+#serviços div img {
+		width: 100%;
+}
+/*Fotos*/
+#fotos {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 20px;
+}
+#fotos h2 {
+			margin-bottom: 20px;
+}
+#foto img {
+		width: 100%;
+}
+/*Contato*/
+#contato {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+#contato h2 {
+	color: #000000;
+}
+/*rodapé*/
+footer {
+		text-align: center;
+		padding: 10px;
+		background-color: #FF4500;
+		color: #FFFFFF;
+}
+footer a {
+			text-decoration: none;
+			color: #00FFFF;
+}
+@media screen and (min-width: 768px) {
+	/*nav*/
+	nav {
+			flex-direction: row;
+			justify-content: space-around;
+	}
+	nav ul {
+			flex-direction: row;
+			width: 70%;
+	}
+	/*Cabeçalho*/
+	header {
+			height: 600px;
+			height: 60vh;
+			justify-content: center;
+	}
+	/*Sbobre*/
+	#sobre {
+		height: 250px;
+		height: 30vh;
+		justify-content: center;
+		min-height: 250px;
+	}
+	/*serviços*/
+	#serviços {
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			margin: 0 auto;
+			width: 97,5%;
+
+	}
+	#serviços h2 {
+			text-align: center;
+			width: 100%;
+	}
+	#serviços div {
+				flex-grow: 1;
+				flex-basis: 150px;
+				padding: 10px 10px;
+	}
+	/*fotos*/
+	#fotos {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#fotos h2 {
+	 		width: 100%;
+	 		text-align:  center;
+	}
+	#fotos img {
+	 		width: 33.3333333%;
+	}
+	/*Contato*/
+	#contato {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			max-width: 500px;
+			margin: 0 auto;
+	}
+	#contato h2, #contato p {
+			width: 100%;
+	}
+}
